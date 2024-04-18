@@ -13,6 +13,8 @@ import detailThreadReducer from './detailThread/reducer';
 const persistConfig = {
   key: 'root',
   storage,
+  whitelist: ['authUser'],
+  blacklist: ['loadingBar'],
 };
 
 const rootReducer = combineReducers({
